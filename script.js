@@ -1,7 +1,6 @@
 /* ------------------------------ DOM SELECTION ----------------------------- */
 const menu = document.querySelector(".menu")
 const input = document.getElementById("dropdown")
-
 console.log(input);
 input.addEventListener('click', (e) => {
     if (input.checked === true) {
@@ -12,3 +11,7 @@ input.addEventListener('click', (e) => {
         document.body.classList.remove('active')
     }
 })
+
+if(input.style.display === 'none') {
+    console.log('gfgdfgd');
+}

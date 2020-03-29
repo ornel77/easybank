@@ -89,6 +89,7 @@ img {
     font-size: initial;
     width: 60%;
     border-radius: 50px;
+    text-align: center;
 }
 
 .btn:hover {
@@ -187,6 +188,10 @@ input:checked + label .bottom {
     color: var(--dark-blue);
 }
 
+.navbar .menu li a:hover {
+    color: var(--lime-green);
+} 
+
 .menu, .hide-button {
     display: none;
 }
@@ -271,9 +276,14 @@ input:checked + label .bottom {
 .articles-grid .article .article-content {
     padding: 30px;
 }
-.articles-grid .article .article-content h4 {
+.articles-grid .article .article-content h4 a {
     margin: 20px 0;
     font-size: 1.5rem;
+    color: inherit;
+}
+
+.articles-grid .article .article-content h4 a:hover {
+    color: var(--lime-green);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -319,6 +329,10 @@ footer .footer-block li {
     margin-bottom: 12px;
 }
 
+footer .footer-block a:hover {
+    color: var(--lime-green);
+}
+
 footer .footer-copyright {
     margin: 20px 0;
 }
@@ -326,6 +340,8 @@ footer .footer-copyright {
 footer .footer-copyright > * {
     margin-bottom: 20px;
 }
+
+
 
 footer .footer-copyright p {
     font-size: 0.8rem;
@@ -339,13 +355,167 @@ footer .footer-copyright p {
 /* -------------------------------------------------------------------------- */
 /*                                MEDIA QUERIES                               */
 /* -------------------------------------------------------------------------- */
+@media screen and (min-width:480px) {
+    body {
+        background-size:70%, 70%;
+    }
+}
 @media screen and (min-width:620px) {
+    body {
+        background-size:50%, 50%;
+    }
     .container {
         max-width: 580px;
     }
+
+    .nav-container {
+        max-width: 570px;
+    }
+
 }
-@media screen and (min-width:1440px) {
+
+@media screen and (min-width:920px) {
+    .container {
+        max-width: 800px;
+    }
+
+    body {
+        background-position: top right, top right;
+        background-size:53%, 45%;
+        
+    }
+    .nav-container {
+        max-width: 800px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .menu {
+        display: flex;
+        flex-direction: row;
+        position: initial;
+        transform: none;
+        z-index: 0;
+        background-color: none;
+        border: none;
+        border-radius: none;
+        margin: auto;
+        text-align: left;
+        padding: initial;
+        width: initial;
+    }
+
+    .navbar .menu li a {
+        font-size: 0.9rem;
+    }
+
+    .hide-button {
+        display: block;
+        width: 30%;
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+    }
+    .hero .hero-content {
+        padding: initial;
+        width: 50%;
+        text-align: initial;
+        
+    }
+
+    .why-content {
+        max-width: 60%;
+        /* text-align: initial; */
+        margin: auto;
+    }
+
+    .why-grid,.articles-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    
+    
+
+    .articles-grid .article img {
+        height: 280px;
+    }
+
+    footer {
+        text-align: initial;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .infos > img {
+        width: 100%;
+        margin: initial;
+    }
+
+    footer .infos .socials {
+        margin-top: 40px;
+    }
+
+    footer .footer-copyright {
+        margin: 0;
+    }
+
+    footer .footer-copyright .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
     .container {
         max-width: 1100px;
+    }
+
+    .nav-container {
+        max-width: 1100px;
+    }
+
+    body {
+        background-size: 30%, 25%;
+        background-position:80% 0px;
+    }
+
+    .hero .hero-content {
+        padding-top: 100px;
+    }
+
+    .why-grid,.articles-grid {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .why-content {
+        text-align: left;
+        margin: initial;
+    }
+
+    .articles-grid .article img {
+        height: 175px;
+    }
+
+    .articles-grid .article .article-content h4 {
+        font-size: 1rem;
+    }
+
+    .articles-grid .article .article-content p {
+        font-size: 0.85rem;
     }
 }
