@@ -15,24 +15,30 @@
 <body>
   <!-- NAV -->
   <nav>
-    <div class="container">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="logo">
-      </div>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#careers">Careers</a></li>
-      </ul>
-      <a href="#" class="btn hide-button">Request Invite</a>
-      <div class="hamburger">
-        <input type="checkbox" id="dropdown">
-        <label for="dropdown" style="display: none;"></label>
-        <span class="bar top"></span>
-        <span class="bar middle"></span>
-        <span class="bar bottom"></span>
+    <div class="nav-container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+        <a href="#" class="btn hide-button">Request Invite</a>
+        <div class="hamburger">
+          <input type="checkbox" id="dropdown">
+          <label for="dropdown">
+            <span class="bars">
+              <span class="bar top"></span>
+              <span class="bar middle"></span>
+              <span class="bar bottom"></span>
+            </span>
+          </label>
+
+        </div>
       </div>
     </div>
   </nav>
@@ -40,6 +46,9 @@
   <!-- HERO SECTION -->
   <section class="hero">
     <div class="container">
+      <div class="bg">
+        <!-- <img src="./images/image-mockups.png" alt=""> -->
+      </div>
       <div class="hero-content">
         <h1>Next generation digital banking</h1>
         <p>Take your financial life online. Your Easybank account will be a one-stop-shop
@@ -99,7 +108,7 @@
   <!-- ARTICLE SECTION -->
   <article class="articles">
     <div class="container">
-      <h1>Latest Articles</h1>
+      <h2>Latest Articles</h2>
       <div class="articles-grid">
         <div class="article">
           <img src="./images/image-currency.jpg" alt="image-currency">
@@ -111,7 +120,7 @@
           </div>
         </div>
         <div class="article">
-          <img src="./images/image-currency.jpg" alt="image-currency">
+          <img src="./images/image-restaurant.jpg" alt="image-restaurant">
           <div class="article-content">
             <p class="small">By Wilson Hutton</p>
             <h4>Treat yourself without worrying about money</h4>
@@ -120,7 +129,7 @@
           </div>
         </div>
         <div class="article">
-          <img src="./images/image-currency.jpg" alt="image-currency">
+          <img src="./images/image-plane.jpg" alt="image-plane">
           <div class="article-content">
             <p class="small">By Wilson Hutton</p>
             <h4>Take your Easybank card wherever you go</h4>
@@ -129,7 +138,7 @@
           </div>
         </div>
         <div class="article">
-          <img src="./images/image-currency.jpg" alt="image-currency">
+          <img src="./images/image-confetti.jpg" alt="image-confetti">
           <div class="article-content">
             <p class="small">By Claire Robinson</p>
             <h4>Our invite-only Beta accounts are now live!</h4>
@@ -172,13 +181,15 @@
         </ul>
 
         <!-- Block 4 -->
-        <div class="footer-block">
+        <div class="footer-copyright">
           <a href="#" class="btn">Request Invite</a>
           <p>© Easybank. All Rights Reserved</p>
         </div>
       </div>
     </div>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
